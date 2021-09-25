@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HPBDTM</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(315deg, #43cea2, #185a9d);
+}
+
+.container {
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+}
+
+.container h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.container h2 span {
+    color: #dd2476;
+    font-size: 1.5em;
+}
+
+.container .timeBx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.container .timeBx div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 20px;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #333;
+}
+
+.container .timeBx div.year {
+    width: 120px;
+}
+
+.container .timeBx div.year span {
+    color: #dd2476;
+}
+
+.age {
+    position: absolute;
+    top: 3%;
+    left: 25%;
+    font-size: 15em;
+    font-weight: 900;
+    color: #eb3349;
+    user-select: none;
+    animation: down 5s ease-in-out infinite;
+}
+
+.text {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 12em;
+    font-weight: 900;
+    color: #f45c43;
+    text-shadow: 0 0 15px #f45b4320,
+    0 0 25px #f45b4320,
+    0 0 50px #f45b4320;
+    user-select: none;
+    animation: up 5s ease-in-out infinite;
+}
+
+@keyframes down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+}
+
+@keyframes up {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="age">20</div>
+    <div class="text">Ages</div>
+    <div class="container">
+        <h2>Happy Birthday To <span>Me</span></h2>
+        <div class="timeBx">
+            <div class="day">14</div>
+            <div class="month">08</div>
+            <div class="year">20<span>21</span></div>
+        </div>
+    </div>
+</body>
+
+</html>
